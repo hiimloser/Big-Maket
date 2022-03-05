@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Maket</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="/big_maket/assets/fonts/fontawesome-free-6.0.0-web/css/all.min.css"
+    />
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sub-menu").parent("li").addClass("has-child");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <div id="heading">
+      <div id="heading-top">
+        <div id="contact">
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">run01@runtime.vn</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">0908 77 00 95</a>
+            </li>
+          </ul>
+        </div>
+        <div id="account">
+          <div id="account-tk">
+            <ul>
+              <li>
+                <a href="#">Đăng nhập</a>
+              </li>
+              <span>/</span>
+              <li>
+                <a href="#">Đăng ký</a>
+              </li>
+            </ul>
+          </div>
+          <div id="search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div id="heading-bottom">
+        <div id="bottom-left">
+          <a href="#"><img src="./assets/Images/logo.png" alt="" /></a>
+        </div>
+        <div id="bottom-right">
+          <ul id="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li>
+              <a href="#">sản phẩm</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">sản phẩm 1</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">sản phẩm 1</a></li>
+                    <li><a href="#">sản phẩm 2</a></li>
+                    <li><a href="#">sản phẩm 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">sản phẩm 2</a></li>
+                <li>
+                  <a href="#">sản phẩm 3</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">sản phẩm 1</a></li>
+                    <li><a href="#">sản phẩm 2</a></li>
+                    <li><a href="#">sản phẩm 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">tin tức</a></li>
+            <li><a href="#">liên hệ</a></li>
+          </ul>
+        </div>
+        <div id="buy">
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <input type="button" value="Giỏ hàng :0" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- middel start -->
+    <div id="middel">
+      <!-- middel-fisrt start -->
+      <div id="middel-fisrt">
+        <div id="middel-fisrt_left">
+          <div class="left-title">
+            <i class="fa-solid fa-list"></i>
+            <h3>Danh mục</h3>
+          </div>
+          <div id="left-list">
+            <ul>
+              <li>
+                <i class="fa-solid fa-person-dress"></i>
+                <a href="#">Thời trang </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-utensils"></i>
+                <a href="#">Thực phẩm</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-camera"></i>
+                <a href="#">Điện tử</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-suitcase"></i>
+                <a href="#">Nội thất</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart"></i>
+                <a href="#">Nữ trang</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-heart"></i>
+                <a href="#">Mỹ phẩm</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <a href="#">Quà tặng</a>
+              </li>
+            </ul>
+          </div>
+          <div id="left-product">
+            <a href="#"
+              ><img src="./assets/Images/banner_img_1.jpg" alt="" srcset="" />
+            </a>
+            <a href="#"
+              ><img src="./assets/Images/banner_img_2.jpg" alt="" srcset="" />
+            </a>
+          </div>
+        </div>
+        <!--  -->
+        <div id="middel-fisrt_mid">
+          <!-- Slide show -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./assets/Images/slideshow_1.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/Images/slideshow_2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/Images/slideshow_3.jpg" style="width: 100%" />
+            </div>
+            <div class="ponter">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+          <div id="big_sale">
+            <div id="big_sale-title">
+              <h4>ưu đãi lớn</h4>
+              <a class="prev" href="" >&#10094;</a>
+              <a class="next" href="" >&#10095;</a>
+            </div>
+            <div id="big_sale-content">
+                <div class="big_sale-content_left">
+                    <a href="#"><img src="./assets/Images/products/ao-belike1_master.jpg" alt="" srcset=""></a>
+                    <div class="big_sale-content_left-sale">
+                        <span>-52%</span>
+                    </div>
+                </div>
+                <div class="big_sale-content_right">
+                    <div class="big_sale-content_right-name">
+                        <a href="#">Áo thun nữ belike</a>
+                    </div>
+                    <div class="big_sale-content_right-price">
+                        <div class="big_sale-price">
+                            <del>200.000<u>đ</u></del>
+                        </div>
+                        <div class="big_sale-price">
+                            <a href="">95.200<u>đ</u></a>
+                        </div>
+                    </div>
+                    <div class="big_sale-content_right-info">
+                        <span>
+                            Trẻ trung và cuốn hút theo phong cách đường
+                            đường phố thu-đông với áo nỏ thêu hình
+                            động vật của  thương hiệu Asos.
+                            <br>
+                            - Chất liệu cotton pha<br>
+                            - Cổ 3cm <br>
+                            - Tay dài, suông<br>
+                            - Khônglót trong<br>
+                            - Màu sắc: Xám<br>
+                            Hướng dẫn sử dụng:<br>
+                            - Giặt bằng tay với nhiệt độ không quá 30C<br>
+                            - Không được tẩy<br>
+                            - Không được sấy không<br>
+                            - Ủi với nhiệt độ...
+                        </span>
+                    </div>
+                    <div class="big_sale-content_right-date">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <h4>0</h4>
+                            <span>Ngày</span>
+                           </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <h4>00</h4>
+                            <span>Giờ</span>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <h4>00</h4>
+                            <span>Phút</span>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <h4>00</h4>
+                            <span>Giây</span>
+                            </a>
+                        </li>
+                      </ul>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div id="middel-fisrt_right">
+          <div id="middel-product">
+            <div id="middel-product_title">
+              <h3>Sản phẩm khuyến mãi</h3>
+            </div>
+            <div class="product">
+              <ul>
+                <li>
+                  <div class="product-face">
+                    <a href="#"
+                      ><img src="./assets/Images/products/sonmoi.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info_name">
+                      <a href="#">Son môi itachi</a>
+                    </div>
+                    <div class="product-info_price">
+                      <div class="price-main">
+                        <del>600.000đ</del>
+                      </div>
+                      <div class="price-sale">
+                        <a href="">500.000đ</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-face">
+                    <a href="#"
+                      ><img src="./assets/Images/products/bekini.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info_name">
+                      <a href="#">Bikini bi áo lửng</a>
+                    </div>
+                    <div class="product-info_price">
+                      <div class="price-main">
+                        <del>600.000đ</del>
+                      </div>
+                      <div class="price-sale">
+                        <a href="">450.000đ</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-face">
+                    <a href="#"
+                      ><img
+                        src="./assets/Images/products/ao-belike1_master.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info_name">
+                      <a href="#">Áo thun nữ belike</a>
+                    </div>
+                    <div class="product-info_price">
+                      <div class="price-main">
+                        <del>200.000đ</del>
+                      </div>
+                      <div class="price-sale">
+                        <a href="">95.200đ</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-face">
+                    <a href="#"
+                      ><img src="./assets/Images/products/dayvacong.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info_name">
+                      <a href="#">Mascara dày và cong</a>
+                    </div>
+                    <div class="product-info_price">
+                      <div class="price-main">
+                        <del>100.000đ</del>
+                      </div>
+                      <div class="price-sale">
+                        <a href="">50.000đ</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="regis-email">
+            <h3>Đăng ký nhận tin</h3>
+            <form action="">
+              <div class="email-enter">
+                <input type="email" placeholder="Email của bạn" />
+              </div>
+              <div class="email-accept">
+                <input type="submit" value="Đăng ký" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- middel-fisrt end -->
+
+      <!-- banner start -->
+      <div id="banner">
+        <img src="./assets/Images/banner_home_img.jpg" alt="" srcset="" />
+      </div>
+      <!-- banner end -->
+
+      <!-- fashion start -->
+      <div id="fashion">
+        <!-- fashion star-menu star -->
+        <div id="fashion-menu">
+          <div class="fashion-menu_title">
+            <i class="fa-solid fa-person-dress"></i>
+            <h3>Thời trang</h3>
+          </div>
+          <div class="fashion-list">
+            <ul>
+              <li><a href="#">Tất cả</a></li>
+              <li><a href="#">Áo sơ mi</a></li>
+              <li><a href="#">Áo</a></li>
+              <li><a href="#">Túi</a></li>
+              <li><a href="#">Trang phục</a></li>
+              <li><a href="#">Phụ kiện</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- fashion star-menu end -->
+
+        <!-- fashion-product start -->
+        <div id="fashion-product">
+          <ul class="fashion-products">
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/ao-somi-2_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Áo sơ mi nữ VNXK</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">280.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del><u></u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>hot</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/ao-belike1_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Áo thun nữ Belike</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">95.200<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>300.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-52%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/ao-yem-1_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Áo kiểu nữ cổ yếm</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">199.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del><u></u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>hot</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/bekini.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Bikini áo lửng</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">450.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>600.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-25%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/2_44_90_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Áo dài cách tân</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">169.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del><u></u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>hot</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/1200_17_67_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Áo thun nữ Love Heart</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">250.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del><u></u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>hot</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- fashion-product end -->
+
+        <!-- fashion-sale start -->
+        <div id="fashion-sale">
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/Images/products/tabs_1_slider_img_1.jpg"alt=""srcset=""/></a>
+              <div class="fashion-sale_buynow">
+                <div class="fashion-sale_buynow-name">
+                    <a href="">Áo siêu cấp vip pro</a>
+                </div>
+                <div class="fashion-sale_buynow-price">
+                    <del>100.000đ</del>
+                    <a href="">150.000đ</a>
+                </div>
+               </div>
+           </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- cosmetic start -->
+      <div id="cosmetic">
+        <!-- cosmetic star-menu star -->
+        <div id="cosmetic-menu">
+          <div class="cosmetic-menu_title">
+            <i class="fa-solid fa-person-dress"></i>
+            <h3>Mỹ phẩm</h3>
+          </div>
+          <div class="cosmetic-list">
+            <ul class="cos">
+              <li><a href="#">Tất cả</a></li>
+              <li><a href="#">Kem dưỡng ẩm</a></li>
+              <li><a href="#">Son môi</a></li>
+              <li><a href="#">Sơn móng tay</a></li>
+              <li><a href="#">Trang điểm</a></li>
+              <li><a href="#">Dưỡng tóc</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- cosmetic star-menu end -->
+
+        <!-- cosmetic-product start -->
+        <div id="fashion-product">
+          <ul class="fashion-products">
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/sonmoi.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Son môi Itachi</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">500.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>600.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-17%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/dayvacong.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Mascara dày và  cong</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">50.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>100.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-50%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/pr10_18fd8cae-14f6-4d70-40b5-5fde4db1df12_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Son môi TPA-115</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">125.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>250.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-50%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/pr12_6e6ab775-622b-43ae-43c9-08796dd0c9e2_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Son bóng hồng</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">100.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>200.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-50%</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/pr8_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Nước làm trắng da SG</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">200.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del><u></u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>hot</span>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-item_face">
+                <a href="#"
+                  ><img
+                    src="./assets/Images/products/pr11_40e951b1-7be3-4f65-4bb8-fc9c1902e6d1_master.jpg"
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+              <div class="product-buynow">
+                <div class="buynow-content">
+                  <div class="buynow-content_name">
+                    <a href="">Phấn trang điểm UAG</a>
+                  </div>
+                  <div class="buynow-content_bottom">
+                    <div class="buynow-name">
+                      <a href="#">400.000<u>đ</u></a>
+                    </div>
+                    <div class="buynow-name">
+                      <del>450.000<u>đ</u></del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>-11%</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- cosmetic-product end -->
+
+        <!-- cosmetic-sale start -->
+        <div id="fashion-sale">
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/Images/tabs_2_slider_img_3.jpg"alt=""srcset=""/></a>
+              <div class="fashion-sale_buynow">
+                <div class="fashion-sale_buynow-name">
+                    <a href="">Son siêu cấp vip pro</a>
+                </div>
+                <div class="fashion-sale_buynow-price">
+                    <del>100.000đ</del>
+                    <a href="">50.000đ</a>
+                </div>
+               </div>
+           </li>
+          </ul>
+        </div>
+      </div>
+      <!-- cosmetic end -->
+
+      <!-- mark start -->
+      <div id="mark">
+          <div>
+            <img src="./assets/Images/partner_img_2.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/Images/partner_img_3.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/Images/partner_img_4.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/Images/partner_img_5.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/Images/partner_img_6.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/Images/partner_img_1.png" alt="">
+          </div>
+      </div>
+      <!-- mark end -->
+    </div>
+    <!-- middel end -->
+
+    <!-- footer start -->
+    <div id="footer">
+        <!-- footer_top start -->
+        <div id="footer_top">
+            <div class="footer_top-content">
+                <div>
+                    <img src="./assets/Images/support_img_1.png" alt="">
+                </div>
+                <div class="footer_top-content-name">
+                    <h4>24/7</h3>
+                    <span>Hỗ trợ miễn phí</span>
+                </div>
+            </div>
+            <div class="footer_top-content">
+                <div>
+                    <img src="./assets/Images/support_img_2.png" alt="">
+                </div>
+                <div class="footer_top-content-name">
+                    <h4>100% hoàn tiền</h3>
+                    <span>Bảo hành</span>
+                </div>
+            </div>
+            <div class="footer_top-content">
+                <div>
+                    <img src="./assets/Images/support_img_3.png" alt="">
+                </div>
+                <div class="footer_top-content-name">
+                    <h4>Miễn phí shipping</h3>
+                    <span>Trên 5 đơn hàng</span>
+                </div>
+            </div>
+            
+        </div>
+        <!-- footer_top end -->
+
+        <!-- footer_bottom start -->
+        <div id="footer_bottom">
+
+            <div id="footer_bottom-top">
+                <div>
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Giao hàng - Đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Trợ giúp</h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Tài khoản giao dịch</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Kết nối với chúng tôi</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <div><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                            <div><a href="">Facebook</a></div>
+                        </li>
+                        <li>
+                            <div><a href=""><i class="fa-brands fa-google-plus-g"></i></a></div>
+                            <div><a href="">Google plus</a></div>
+                        </li>
+                        <li>
+                            <div><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                            <div><a href="">Twitter</a></div>
+                        </li>
+                        <li>
+                            <div><a href=""><i class="fa-brands fa-flickr"></i></a></div>
+                            <div><a href="">Flickr</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hãy đến với chúng tôi</h4>
+                </div>
+            </div>
+
+            <div id="footer_bottom-bottom">
+                <div>
+                    <span>
+                        Coppyright © 2016 Big Maket. Powered by <a href="">RUNTIME.VN</a>
+                    </span>
+                </div>
+                <div>
+                    <img src="./assets/Images/payment-logo.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- footer_bottom end -->
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
